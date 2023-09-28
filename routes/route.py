@@ -30,7 +30,7 @@ async def post_todo(todo: Todo):
 async def put_todo(id: str, todo: Todo):
     todo_actualizado = collection_book.find_one_and_update({"_id": ObjectId(id)}, {"$set": dict(todo)})
     if todo_actualizado is None:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Tarea no encontrada")
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="No existe esta tarea")
     
 # Si la tarea se ha vendido, la movemos a la colección "vendidos"
     if todo.vendido:
