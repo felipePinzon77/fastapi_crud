@@ -7,3 +7,4 @@ class Todo(BaseModel):
     edicion: float
     categoria: str
     precio: float
+    vendido: bool

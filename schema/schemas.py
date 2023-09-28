@@ -6,8 +6,8 @@ def individual_serial(todo) -> dict:
         "editorial": todo["editorial"],
         "edicion": float(todo["edicion"]),
         "categoria": todo["categoria"],
-        "precio": float(todo["precio"])
-
+        "precio": float(todo["precio"]),
+        "vendido": bool(todo["vendido"])
     }
 
 def list_serial(todos) -> list:

@@ -6,3 +6,4 @@ client = MongoClient("mongodb+srv://fepinzon77:evGZFj7y0nP5znTG@clusterfpg.6b9mw
 db = client.todo_db
 
 collection_book = db["todo_collection"]
+collection_sell = db["venidos_collection"]
