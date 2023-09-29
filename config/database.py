@@ -3,7 +3,6 @@ from pymongo import MongoClient
 
 client = MongoClient("mongodb+srv://fepinzon77:evGZFj7y0nP5znTG@clusterfpg.6b9mwdo.mongodb.net/?retryWrites=true&w=majority")
 
-db = client.todo_db
+db = client.contactsdb
 
-collection_book = db["todo_collection"]
-collection_sell = db["venidos_collection"]
+collection_number = db["numero_collection"]
